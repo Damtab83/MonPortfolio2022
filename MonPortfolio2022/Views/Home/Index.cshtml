@@ -1,8 +1,82 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Mon PortFolio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<section>
+    <article>
+        <h1>Bonjour, Je m'appelle Damien TABARY. Bienvenu sur mon Portfolio</h1>
+        <span>Voici mon Portfolio, réalisé en ASP.NET CORE</span>
+    </article> 
+</section>
+<hr />
+
+<section>
+    <article>
+        <h2>Qui suis-je?</h2>
+        <img src="~/img/mountains.jpg" alt="mountains" style="max-width:100px"/>
+        <p>lorem
+                fhzohdvojhpdihdsjvjksv mnmkcv,mpnfpn
+                aflkpzjpeqfnnmfrekmqfnmre
+        </p>
+    </article>
+</section>
+<hr />
+<section>
+    <article>
+        <h2>Vous avez forcément besoin de moi</h2>
+        <i>(je suis presque sûr que oui)</i>
+
+        <h3>Je suis à la recherche de : </h3>
+        <div>
+            <article>
+                <h4>Stage</h4>
+                <img src="~/img/stage.png"  style="max-width:100px"/>
+                <p>La description du stage</p>
+            </article>
+            <article>
+                <h4>Un job épanouïssant</h4>
+                <img src="~/img/good_job.jpg"  style="max-width:100px"/>
+                <p>Afin de pouvoir grandir</p>
+            </article>
+            <article>
+                <h4>Un patron de rêve</h4>
+                <img src="~/img/good_boss.jpg"  style="max-width:100px"/>
+                <p>Pour tout transformer en enfer</p>
+            </article>
+        </div>
+    </article>
+</section>
+<hr />
+<section>
+    <h2>Mon expérience professionnelle</h2>
+    <ul>
+        <li>
+            Stage
+        </li>
+        <li>
+            Emploi
+        </li>
+        <li>
+            Emploi fictif
+        </li>
+    </ul>
+</section>
+<hr />
+<section>
+    <h2>Contact</h2>
+    <form action ="/Home/EnvoyerMail" method="post">
+        <label for="nom">Merci de donner votre nom</label><br />
+        <input type="text" id="nom" placeholder="Votre nom"/>
+        <br />
+
+        <label for="mail">Merci de donner votre mail</label><br />
+        <input type="email" id="mail" placeholder="ex: mail@example.com"/>
+        <br />
+
+        <label for="message">Quel est votre message ?</label><br />
+        <textarea type="text" id="message" placeholder="Votre message" maxlength="150"></textarea>
+        <br />
+        <input type="submit" value="Envoyer" />
+    </form>
+</section>
